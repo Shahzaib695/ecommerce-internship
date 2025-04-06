@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Intership/ecommerce-web/src/app/product/%5Bid%5D/page.js"],"sourcesContent":["// app/product/[id]/page.js\r\nimport { useRouter } from \"next/navigation\";\r\n\r\nconst ProductDetails = ({ params }) => {\r\n  const { id } = params;\r\n\r\n  const products = [\r\n    { id: 1, name: \"T-shirt\", price: \"$10\", description: \"A comfortable T-shirt.\" },\r\n    { id: 2, name: \"Sneakers\", price: \"$50\", description: \"Stylish sneakers.\" },\r\n  ];\r\n\r\n  const product = products.find((item) => item.id === parseInt(id));\r\n\r\n  if (!product) {\r\n    return <p>Product not found!</p>;\r\n  }\r\n\r\n  return (\r\n    <div className=\"p-6\">\r\n      <h1 className=\"text-2xl font-bold\">{product.name}</h1>\r\n      <p>{product.description}</p>\r\n      <p className=\"text-lg font-semibold\">{product.price}</p>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default ProductDetails;\r\n"],"names":[],"mappings":"AAAA,2BAA2B;;;;;AAC3B;;;AAEA,MAAM,iBAAiB,CAAC,EAAE,MAAM,EAAE;IAChC,MAAM,EAAE,EAAE,EAAE,GAAG;IAEf,MAAM,WAAW;QACf;YAAE,IAAI;YAAG,MAAM;YAAW,OAAO;YAAO,aAAa;QAAyB;QAC9E;YAAE,IAAI;YAAG,MAAM;YAAY,OAAO;YAAO,aAAa;QAAoB;KAC3E;IAED,MAAM,UAAU,SAAS,IAAI,CAAC,CAAC,OAAS,KAAK,EAAE,KAAK,SAAS;IAE7D,IAAI,CAAC,SAAS;QACZ,qBAAO,8OAAC;sBAAE;;;;;;IACZ;IAEA,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAG,WAAU;0BAAsB,QAAQ,IAAI;;;;;;0BAChD,8OAAC;0BAAG,QAAQ,WAAW;;;;;;0BACvB,8OAAC;gBAAE,WAAU;0BAAyB,QAAQ,KAAK;;;;;;;;;;;;AAGzD;uCAEe"}},
+    {"offset": {"line": 75, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 86, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 86, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
