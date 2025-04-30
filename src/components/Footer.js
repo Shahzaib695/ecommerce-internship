@@ -56,7 +56,7 @@ const Footer = () => {
 
       <div className="py-5">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
-          <p className="text-base font-semibold  text-gray-700">© 2025 Ecommerce Web . All rights reserved By Munawar Khan.</p>
+          <p className="text-base font-semibold  text-gray-700">© 2025 Ecommerce Web . All rights reserved By Shahzaib.</p>
         </div>
       </div>
     </footer>
